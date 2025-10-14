@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11018.127
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hdrules.Domain", "Hdrules.Domain\Hdrules.Domain.csproj", "{1A19E0B1-1111-4E32-8C03-AAAA1111AAAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hdrules.Data", "Hdrules.Data\Hdrules.Data.csproj", "{2B29E0B1-2222-4E32-8C03-BBBB2222BBBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hdrules.Engine", "Hdrules.Engine\Hdrules.Engine.csproj", "{3C39E0B1-3333-4E32-8C03-CCCC3333CCCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hdrules.NRules", "Hdrules.NRules\Hdrules.NRules.csproj", "{4D49E0B1-4444-4E32-8C03-DDDD4444DDDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hdrules.Cache", "Hdrules.Cache\Hdrules.Cache.csproj", "{5E59E0B1-5555-4E32-8C03-EEEE5555EEEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hdrules.Api", "Hdrules.Api\Hdrules.Api.csproj", "{6F69E0B1-6666-4E32-8C03-FFFF6666FFFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A19E0B1-1111-4E32-8C03-AAAA1111AAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A19E0B1-1111-4E32-8C03-AAAA1111AAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A19E0B1-1111-4E32-8C03-AAAA1111AAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A19E0B1-1111-4E32-8C03-AAAA1111AAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B29E0B1-2222-4E32-8C03-BBBB2222BBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B29E0B1-2222-4E32-8C03-BBBB2222BBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B29E0B1-2222-4E32-8C03-BBBB2222BBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B29E0B1-2222-4E32-8C03-BBBB2222BBBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C39E0B1-3333-4E32-8C03-CCCC3333CCCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C39E0B1-3333-4E32-8C03-CCCC3333CCCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C39E0B1-3333-4E32-8C03-CCCC3333CCCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C39E0B1-3333-4E32-8C03-CCCC3333CCCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D49E0B1-4444-4E32-8C03-DDDD4444DDDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D49E0B1-4444-4E32-8C03-DDDD4444DDDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D49E0B1-4444-4E32-8C03-DDDD4444DDDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D49E0B1-4444-4E32-8C03-DDDD4444DDDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E59E0B1-5555-4E32-8C03-EEEE5555EEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E59E0B1-5555-4E32-8C03-EEEE5555EEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E59E0B1-5555-4E32-8C03-EEEE5555EEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E59E0B1-5555-4E32-8C03-EEEE5555EEEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F69E0B1-6666-4E32-8C03-FFFF6666FFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F69E0B1-6666-4E32-8C03-FFFF6666FFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F69E0B1-6666-4E32-8C03-FFFF6666FFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F69E0B1-6666-4E32-8C03-FFFF6666FFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
