@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11111.16 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hdrules.Domain", "Hdrules.Domain\Hdrules.Domain.csproj", "{1A19E0B1-1111-4E32-8C03-AAAA1111AAAA}"
 EndProject
@@ -18,20 +18,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{02EA681E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{2BE6967F-35A5-43FF-894D-D86F610F0434}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\sql\01_drop_create.sql = ..\..\sql\01_drop_create.sql
-		..\..\sql\02_sample_data.sql = ..\..\sql\02_sample_data.sql
+		sql\01_drop_create.sql = sql\01_drop_create.sql
+		sql\02_sample_data.sql = sql\02_sample_data.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postman", "postman", "{83AA9226-6820-4D16-AEE2-658DA7C84DFF}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\tools\postman\HDRules.postman_collection.json = ..\..\tools\postman\HDRules.postman_collection.json
+		tools\postman\HDRules.postman_collection.json = tools\postman\HDRules.postman_collection.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "package", "package", "{2CD1B00F-9050-4B18-A218-7E8E2867336E}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\sql\packages\hdrules_perf_pkg.sql = ..\..\sql\packages\hdrules_perf_pkg.sql
-		..\..\sql\packages\hdrules_seed_pkg.sql = ..\..\sql\packages\hdrules_seed_pkg.sql
-		..\..\sql\packages\hdrules_test_pkg.sql = ..\..\sql\packages\hdrules_test_pkg.sql
+		sql\packages\hdrules_perf_pkg.sql = sql\packages\hdrules_perf_pkg.sql
+		sql\packages\hdrules_seed_pkg.sql = sql\packages\hdrules_seed_pkg.sql
+		sql\packages\hdrules_test_pkg.sql = sql\packages\hdrules_test_pkg.sql
 	EndProjectSection
 EndProject
 Global
