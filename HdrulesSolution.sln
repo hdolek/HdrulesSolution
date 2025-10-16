@@ -27,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postman", "postman", "{83AA
 		tools\postman\HDRules.postman_collection.json = tools\postman\HDRules.postman_collection.json
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "package", "package", "{2CD1B00F-9050-4B18-A218-7E8E2867336E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "package", "package", "{0374F58F-1D00-479C-88D6-8E0A07768BC5}"
 	ProjectSection(SolutionItems) = preProject
 		sql\packages\hdrules_perf_pkg.sql = sql\packages\hdrules_perf_pkg.sql
 		sql\packages\hdrules_seed_pkg.sql = sql\packages\hdrules_seed_pkg.sql
@@ -70,6 +70,9 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{83AA9226-6820-4D16-AEE2-658DA7C84DFF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{2CD1B00F-9050-4B18-A218-7E8E2867336E} = {2BE6967F-35A5-43FF-894D-D86F610F0434}
+		{0374F58F-1D00-479C-88D6-8E0A07768BC5} = {2BE6967F-35A5-43FF-894D-D86F610F0434}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76F34E6D-E4CD-471B-8497-50E06A2D1B76}
 	EndGlobalSection
 EndGlobal
