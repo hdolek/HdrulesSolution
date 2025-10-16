@@ -1,0 +1,32 @@
+
+-- ###############################################################
+-- HDRULES_TEST_PKG - Basit okuma/test prosedürleri
+-- (İş mantığı yok; sadece veri görüntüler)
+-- ###############################################################
+CREATE OR REPLACE PACKAGE HDRULES_TEST_PKG AS
+  TYPE T_CURSOR IS REF CURSOR;
+  PROCEDURE GET_GROUP_SUMMARY(p_group_code VARCHAR2, p_cur OUT T_CURSOR);
+  PROCEDURE GET_RULE_DETAIL(p_rule_code VARCHAR2, p_cur OUT T_CURSOR);
+END HDRULES_TEST_PKG;
+/
+CREATE OR REPLACE PACKAGE BODY HDRULES_TEST_PKG AS
+  PROCEDURE GET_GROUP_SUMMARY(p_group_code VARCHAR2, p_cur OUT T_CURSOR) IS
+  BEGIN
+    OPEN p_cur FOR
+      SELECT g.GROUP_CODE, g.GROUP_NAME, r.RULE_CODE, r.RULE_NAME, r.PRIORITY, r.IS_ACTIVE
+      FROM HDRULES_RULE_GROUP g
+      JOIN HDRULES_RULE r ON r.RULE_GROUP_ID=g.RULE_GROUP_ID
+      WHERE g.GROUP_CODE = p_group_code
+      ORDER BY r.PRIORITY DESC, r.RULE_CODE;
+  END;
+  PROCEDURE GET_RULE_DETAIL(p_rule_code VARCHAR2, p_cur OUT T_CURSOR) IS
+  BEGIN
+    OPEN p_cur FOR
+      SELECT r.RULE_CODE, c.ORDINAL, c.LEFT_PARAM_CODE, c.OPERATOR, c.VALUE_TYPE, c.VALUE_TEXT, c.VALUE_TO_TEXT
+      FROM HDRULES_RULE r
+      LEFT JOIN HDRULES_CONDITION c ON c.RULE_ID=r.RULE_ID
+      WHERE r.RULE_CODE = p_rule_code
+      ORDER BY c.ORDINAL;
+  END;
+END HDRULES_TEST_PKG;
+/
