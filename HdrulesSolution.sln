@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hdrules.Cache", "Hdrules.Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hdrules.Api", "Hdrules.Api\Hdrules.Api.csproj", "{6F69E0B1-6666-4E32-8C03-FFFF6666FFFF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{337D17BA-7DFA-4457-8CAA-2A8843A81D00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "package", "package", "{5143C2A0-5C47-448D-8555-F04DFF3B11FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5143C2A0-5C47-448D-8555-F04DFF3B11FF} = {337D17BA-7DFA-4457-8CAA-2A8843A81D00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {76F34E6D-E4CD-471B-8497-50E06A2D1B76}
