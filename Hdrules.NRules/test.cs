@@ -9,20 +9,18 @@ public class SumTeminatABRule : Rule
 {
     public override void Define()
     {
-        #if DEBUG
+#if DEBUG
         System.Diagnostics.Debugger.Break();
-        #endif
-        Hdrules.NRules.NRulesContext state = null;
+#endif
+        Hdrules.NRules.NRulesContext? state = null;
 
-        // Expression-tree içinde iþlem yapýlmýyor; sadece fact baðlanýyor.
+        // IDE0350: Lambda expression can be simplified
         When()
-            .Match<Hdrules.NRules.NRulesContext>(() => state, s => true);
+            .Match<Hdrules.NRules.NRulesContext>(() => state!, s => true);
 
-        // ÖNEMLÝ: statement body ve null-prop vs. LAMBDA içinde deðil,
-        // ayrý bir metoda taþýndý. Expression tree burada sadece bir
-        // "method call" içeriyor, bu serbest.
+        // CS8604: Possible null reference argument for parameter 'state'
         Then()
-            .Do((IContext ctx) => SumTeminatAb(state));
+            .Do((IContext ctx) => SumTeminatAb(state!));
     }
 
     private static void SumTeminatAb(Hdrules.NRules.NRulesContext state)
