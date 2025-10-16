@@ -298,3 +298,4 @@ public class SumTeminatABRule : Rule
 }
 ]', 1
 FROM HDRULES_RULE_GROUP g WHERE g.GROUP_CODE='ARAC_BILGI';
+
